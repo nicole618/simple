@@ -63,6 +63,10 @@ const render = () => {
 render()
 $addSite.on('click', () => {
     let url = window.prompt('请输入您要添加的网站链接')
+    if (url.length === 0) {
+        alert('网址不能为空')
+        return
+    }
     if (url.indexOf('http') !== 0) {
         url = 'https://' + url
     }

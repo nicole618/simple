@@ -183,6 +183,11 @@ render();
 $addSite.on('click', function () {
   var url = window.prompt('请输入您要添加的网站链接');
 
+  if (url.length === 0) {
+    alert('网址不能为空');
+    return;
+  }
+
   if (url.indexOf('http') !== 0) {
     url = 'https://' + url;
   }
@@ -222,4 +227,4 @@ var randomColor = function randomColor() {
   return "#" + color;
 };
 },{}]},{},["epB2"], null)
-//# sourceMappingURL=/main.8459be52.js.map
+//# sourceMappingURL=main.3e97a5dc.js.map
