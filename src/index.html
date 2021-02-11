@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <title>前端导航网站</title>
+    <link rel="styleSheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="siteHeader">
+            <div class="simpleLogo"><img src="./images/logo.png"></div>
+            <form method="GET" action="https://www.baidu.com/s" class="siteForm" target="_blank">
+                <input type="text" name="test" x-webkit-speech lang="zh-CN" x-webkit-grammar="bUIltin:search" />
+
+                <button type="submit">搜索</button>
+            </form>
+        </header>
+        <main class="siteMain">
+            <ul class="sitList">
+
+                <li class="addSite">
+                    <div class="logo">
+                        <svg class="icon" aria-hidden="true">
+                            <use xlink:href="#icon-add"></use>
+                        </svg>
+                    </div>
+                    <div>新增网站</div>
+                </li>
+            </ul>
+        </main>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//at.alicdn.com/t/font_2372020_uzyu6phvr0d.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
